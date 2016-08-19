@@ -1,7 +1,10 @@
-env:
-  spring.cloud.config.uri=http://marconfigserver.cfapps.io
-  spring.cloud.config.username=config_client
-  spring.cloud.config.password=goru
-  spring.cloud.config.label=develop
-  spring.profiles.active=dev
-  spring.cloud.config.enabled=true
+spring:
+  cloud:
+    config:
+      uri: "http://marconfigserver.cfapps.io"
+      username: config_client
+      password: goru
+      label: master
+      enabled: true
+  profiles:
+    active: dev
